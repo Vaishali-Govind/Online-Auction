@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>art</title>
+    <link rel="stylesheet" href="../cdac/css/artstyle.css">
+    <link href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" rel="stylesheet">
+    
+</head>
+<body>
+<nav class="navbar">
+    <span class="open-slide">
+      <a href="#" onclick="openSlideMenu()">
+        <svg width="30" height="30">
+            <path d="M0,5 30,5" stroke="#fff" stroke-width="5"/>
+            <path d="M0,14 30,14" stroke="#fff" stroke-width="5"/>
+            <path d="M0,23 30,23" stroke="#fff" stroke-width="5"/>
+        </svg>
+      </a>
+    </span>
+
+    <ul class="navbar-nav">
+      <li><a href="file:///C:/Users/vaishali/Desktop/cdac/jwel.html">JEWELERY</a></li>
+      
+      <li><a href="file:///C:/Users/vaishali/Desktop/cdac/homes.html">HOMES</a></li>
+      <li><a href="file:///C:/Users/vaishali/Desktop/cdac/ant.html">ANTIIQUES</a></li>
+    </ul>
+  </nav>
+ <div id="side-menu" class="side-nav">
+    <a href="#" class="btn-close" onclick="closeSlideMenu()">&times;</a>
+    <a href="#">JEWELERY</a>
+   
+    <a href="#">HOUSE</a>
+    <a href="#">ANTIQUES</a>
+  </div>
+  	 <script>
+    function openSlideMenu(){
+      document.getElementById('side-menu').style.width = '250px';
+      document.getElementById('main').style.marginLeft = '250px';
+    }
+
+    function closeSlideMenu(){
+      document.getElementById('side-menu').style.width = '0';
+      document.getElementById('main').style.marginLeft = '0';
+    }
+  </script>
+   <div id="profilebar">
+    <div class="profile">
+        <img src="../cdac/images/art1.jpg" alt="">
+        <input type="button" value="view" class="button">
+        <div class="details active">
+            <h2>THE HORSES<br><span>Base Price Rs-/9000</span></h2>
+            <p> </p>
+            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i>
+            
+            
+        </div>
+    </div>
+    <div class="profile2">
+        <img src="../cdac/images/mother.jpg" alt="">
+        <a href="art1.html"> <input type="button" value="view" class="button"></a>
+        <div class="details active">
+            <h2>MONA LISA<br><span>Base Price Rs-/9000</span></h2>
+            <p> </p>
+            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i>
+            
+            
+        </div>
+    </div>
+     <div class="profile3">
+        <img src="../cdac/images/art2.jpg" alt="">
+        <input type="button" value="view" class="button">
+        <div class="details active">
+            <h2>PEOPLE INSIDE A DOME<br><span>Base Price Rs-/9000</span></h2>
+            <p> </p>
+            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i>
+            
+            
+        </div>
+    </div>
+       <div class="profile4">
+        <img src="../cdac/images/arch.jpg" alt="">
+        <input type="button" value="view" class="button">
+        <div class="details active">
+            <h2>ARCHITECTURE<br><span>Base Price Rs-/9000</span></h2>
+            <p> </p>
+            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i>
+            
+        </div>
+    </div>
+    
+     <div class="profile5">
+        <img src="../cdac/images/archi.jpg" alt="">
+        <input type="button" value="view" class="button">
+        <div class="details active">
+            <h2>BEAUTIFUL CITY<br><span>Base Price Rs-/9000</span></h2>
+            <p> </p>
+            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i>
+            
+        </div>
+    </div>
+     <div class="profile6">
+        <img src="../cdac/images/nature.jpg" alt="">
+        <input type="button" value="view" class="button">
+        <div class="details active">
+            <h2>NATURES BEAUTY<br><span>Base Price Rs-/9000</span></h2>
+              <p> </p>
+            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i>
+            
+            </div>
+    </div>
+    </div>
+    <footer>
+    <div class="container">
+        <div class="box">
+           <div class="icon"><i class="fas fa-search"></i></div>
+           <div class="content">
+               <h3>Search</h3>
+               <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non repudiandae repellat minus dolorum </p>
+           </div>
+            </div>
+             <div class="box">
+               <div class="icon"><i class="fas fa-user"></i></div>
+           <div class="content">
+               <h3>User</h3>
+               <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non repudiandae repellat minus dolorum </p>
+           </div>
+            </div>-
+            
+            <div class="box">
+                <div class="icon"><i class="fas fa-map-marker-alt"></i></div>
+           <div class="content">
+               <h3>Location</h3>
+               <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non repudiandae repellat minus dolorum </p>
+           </div>
+            </div>
+            </div>
+    
+    
+    </footer>
+    <div id="mySidenav" class="sidenav">
+  <a href="#" id="about">Sort by</a>
+  <a href="#" id="blog">Filter</a>
+  <a href="#" id="projects">Help</a>
+  <a href="#" id="contact">Reviews</a>
+  
+</div>
+</body>
+</html>

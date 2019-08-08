@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>home</title>
+    <link rel="stylesheet" href="../cdac/css/indexstyle.css">
+    <link href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Bree+Serif" rel="stylesheet">
+</head>
+<style>
+    *{
+    margin: 0;
+    padding: 0;
+    font-family: Century Gothic;
+    
+}
+header{
+    background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url(images/home.png);
+
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+}
+ul{
+    list-style-type:none;
+    float:right;
+    margin-top: 25px;
+    
+}
+ul li{
+    display: inline-block;
+    
+}
+ul li a{
+    text-decoration: none;
+    color: #ffde59;
+    padding: 5px 20px;
+    border: 1px solid transparent;
+    transition: 0.6s ease;
+}
+ul li a:hover{
+    background-color:#ffde59 ;
+    color: #4b2f04;
+    
+}
+.logo img{
+    float: left;
+    width: 150px;
+    height: 130px;
+    position: relative;
+    margin-top: 3%;
+    margin-left: 3%;
+}
+.main{
+    max-width: 1200px;
+    margin: auto;
+}
+ul li.active a{
+    background-color:#ffde59;
+    color:  #4b2f04;
+    
+}
+.title{
+    
+position: absolute;
+    top: 50%;
+    left: 53%;
+    transform: translate(-50%,-50%);
+    
+}
+.title h1{
+    color:#ffde59 ;
+    font-size: 70px;'
+
+    '
+}
+.button{
+    position: absolute;
+    top: 65%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    
+}
+.btn{
+    border: 1px solid #ffde59;
+    padding: 10px 30px;
+    color: #ffde59;
+    text-decoration: none;
+    transition: 0.6s ease;
+}
+.btn:hover{
+    background-color: #ffde59;
+    color:  #4b2f04;
+}
+.sub{
+     background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url(images/office.jpeg);
+       height: 100vh;
+    background-size: cover;
+    background-position: center;
+  
+}
+.para{
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width:650px;
+    height: 600px;
+    
+    transform-style: preserve-3d;
+    perspective: 2000px;
+    transition: 0.5s;
+    
+}
+.para:hover{
+    transform: translate(-50%,-50%) rotateY(-30deg) skewY(5deg);
+}
+.para:before{
+    content: '';
+    position:absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    border-top: 20px solid #fff;
+        border-left: 20px solid #fff;
+    box-sizing: border-box;
+    
+    
+}
+.para:after{
+    content: '';
+    position:absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    border-bottom: 20px solid #fff;
+        border-right: 20px solid #fff;
+    box-sizing: border-box;
+    
+    
+}
+ .para .text{
+    position: relative;
+    padding: 100px;
+    top: 70px;
+    left: -90px;
+    color: #fff;
+    background: rgba(0,0,0,0.6);
+    width:calc(100% + 0px);
+    height: calc(100% - 395px);
+    
+    transition: 0.5s;
+}
+.para:hover .text{
+    transform: rotateY(30deg) skewY(-5deg);
+}
+
+.text div{
+    position: absolute;
+    top: 50%;
+    left: 0;
+    width: 100%;
+    transform: translateY(-50%);
+    padding: 50px 150px;
+    box-sizing: border-box;
+    text-align: center;
+    z-index: 3;
+}
+.text div h1{
+    margin: 0 0 20px;
+    color: coral;
+    padding: 0;
+}
+.text div p{
+    margin: 0 0 20px;
+    color: #fff;
+    padding: 0;
+    font-size: 18px;
+    font-family: sans-serif;
+}
+
+
+
+.container{
+    width: 100%;
+    height: 200px;
+    display:flex;
+    box-sizing: border-box;
+    position: relative;
+     margin-top: 10%;
+    transform: translateY(-50%);
+    background: black;
+}
+detais{
+    background: black;
+}
+.box{
+    width: auto;
+    text-align: center;
+    line-height: 200px;
+    flex-grow: 1;
+    transition:.5s;
+    font-size: 1.2em;
+    color: floralwhite;
+    background: #f00;
+}
+.box:hover
+{
+    flex-grow: 4;
+    max-width: 100%;
+     font-size:2em;
+    
+}
+.container .box:nth-child(1)
+{
+    background-image:  linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url(images/help.jpg);
+    
+    background-size: cover;
+    background-position: center
+    
+}
+.container .box:nth-child(2)
+{
+    background-image:  linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url(images/team.jpg);
+    
+    background-size: cover;
+    background-position: center
+    
+}
+.container .box:nth-child(3)
+{
+    background-image:  linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url(images/mission.jpg);
+    
+    background-size: cover;
+    background-position: center
+    
+}
+.container .box:nth-child(4)
+{
+    background-image:  linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url(images/about.jpg);
+    
+    background-size: cover;
+    background-position: center
+    
+}
+.container .box:nth-child(5)
+{
+    background-image:  linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url(images/blog.jpg);
+    
+    background-size: cover;
+    background-position: center
+    
+}
+.containertwo{
+    position: relative;
+    top: 2%;
+    left:10%;
+    margin-bottom: 5%;
+    width: 900px;
+    margin:5px 50px 75px 100px;
+    display: flex;
+    
+    
+}
+
+.containertwo .boxtwo
+{
+    position: relative;
+    top: 10%;
+    width: 300px;
+    height: 100px;
+    box-sizing: border-box;
+    text-align: center;
+    margin: 0 10px;
+}
+.containertwo .boxtwo .icon
+{
+    width: 100%;
+    height: 100%;
+    background: black;
+    transition: 0.5s;
+    transform-origin: top;
+    transform: translateY(0)rotateX(0deg);
+    
+}
+.containertwo .boxtwo:hover .icon
+{
+    transform:translateY(100%) rotateX(90deg);
+}
+.containertwo .boxtwo .icon .fas
+{
+    font-size: 4em;
+    line-height: 100px;
+    color: darkgrey;
+    
+}
+.containertwo .boxtwo .details
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background:orange;
+    transition: 0.5s;
+     transform-origin: bottom;
+    transform: translateY(-100px)rotateX(90deg);
+}
+
+.containertwo .boxtwo:hover .details{
+    transform:translateY(0) rotateX(0deg);
+}
+.containertwo .boxtwo .details h3{
+    margin: 0;
+    padding: 0;
+    line-height: 100px;
+    font-size: 24px;
+    color: #fff;
+    font-family: sans-serif;
+}
+.containertwo .boxtwo:nth-child(2) .details
+
+{
+    background: #e91e63;
+    
+}
+.containertwo .boxtwo:nth-child(3) .details
+{
+    background: #8bc34a;
+}
+.fas.fas1 , .fas.fas2{
+    width: 80px;
+    background: #fff;
+    color: #262626;
+    text-align: center;
+    line-height: 80px !important;
+    font-size:  40px !important;
+}
+.fas.fas1{
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    
+}
+.fas.fas2{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    
+}
+    </style>
+<body>
+    <header>
+        <div class="main">
+           <div class="logo">
+               <img src="images/logo2.PNG" alt="">
+           </div>
+            <ul>
+                <li class="active"><a href="#">Home</a></li>                
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Gallery</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact</a></li>
+                
+            </ul>
+        </div>
+            <div class="title">
+                <h1 class="h11">WELCOME TO</h1>
+                <h1>AUCTION EMPIRE</h1>
+            </div>
+            <div class="button">
+                <a href="file:///C:/Users/vaishali/Desktop/cdac/register.html" class="btn"><b>REGISTER FOR AUCTION</b></a>
+                 <a href="file:///C:/Users/vaishali/Desktop/cdac/login.html" class="btn"><b>SIGN IN FOR AUCTION</b></a>
+        </div>
+    </header>
+    <headerone>
+        <div class="sub">
+           
+    
+            <div class="para">
+                <i class="fas fa-quote-left fas2"></i>
+               <div class="text">
+               <i class="fas fa-quote-right fas1"></i>
+              
+              <div>
+                  <h1>OUR COMPANY CULTURE <i class="fas fa-handshake"></i></h1>
+                      <p>When organizational culture is the topic, Zappos always make it into the list. Always, without exception. They weed out the people that are just there for a paycheck and retain only those who are committed to what the company stands for.The company makes sure that there is always an upcoming event so the entire team has something to look forward to, and it uses methods to make sure the entire team works well together by insisting everyone helps keep break areas clean or sending random employees out to lunch together.</p>
+              </div>
+            </div>
+        </div>
+        </div>
+    </headerone>
+    <detais>
+        <div class="more">
+         
+                
+        
+        </div>
+        <div class="container">
+            <div class="box">HELP</div>
+            <div class="box">OUR MISSION</div>
+                <div class="box">OUR TEAM</div>
+                  <div class="box">ABOUT</div>
+                    <div class="box">OUR LATEST BLOGS</div>
+        </div>
+    </detais>
+    <footer>
+    <div class="containertwo">
+        <div class="boxtwo">
+            <div class="icon"><i class="fas fa-map-marker-alt" ></i></div>
+            <div class="details"><h3>INDIA</h3></div>
+        </div>
+        <div class="boxtwo">
+            <div class="icon"><i class="fas fa-phone" ></i></div>
+            <div class="details"><h3>+345662199</h3></div>
+        </div>
+        <div class="boxtwo">
+            <div class="icon"><i class="fas fa-envelope" ></i></div>
+            <div class="details"><h3>govind@gmail.com</h3></div>
+        </div>
+    </div>
+    </footer>
+</body>
+</html>
